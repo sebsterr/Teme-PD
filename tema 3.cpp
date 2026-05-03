@@ -1,4 +1,27 @@
-﻿#include <windows.h>
+/*
+
+ TEMA OBLIGATORIE 3: Crearea unui serviciu sistem "Hello World"
+
+ INSTRUCTIUNI DE RULARE:
+ 
+ 1. COMPILARE: 
+    - Build -> Build Solution (Ctrl+Shift+B) in Visual studio studio
+
+ 2. INSTALARE (CMD cu drepturi de Administrator):
+    sc create HelloWorldService binPath= -PATH-
+
+ 3. PORNIRE:
+    sc start HelloWorldService
+
+ 4. VERIFICARE REZULTAT:
+    - Mesajul "Hello World!" va fi scris in fisierul de log 
+
+ 5. OPRIRE SI STERGERE:
+    sc stop HelloWorldService
+    sc delete HelloWorldService
+*/
+
+#include <windows.h>
 #include <tchar.h>
 #include <fstream>
 #include <string>
